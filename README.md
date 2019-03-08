@@ -42,28 +42,7 @@ Ideally we would want to incorporate climate data into the analysis. To this end
 
 ## Demo
 
-The [demo.txt](demo.txt) performs the following tasks: 
-
-```console
-# get VCF file from cerealsDB
-cd data
-wget -c http://www.cerealsdb.uk.net/cerealgenomics/FINAL_35K_all_varieties_for_Guy.vcf .
-cd ..
-
-# extract SNPs among Solstice and Skyfall and take first hundred
-perl extract_SNPs.pl -v data/FINAL_35K_all_varieties_for_Guy.vcf \
-	-s Solstice.Skyfall.list -p > Solstice.Skyfall.vcf
-
-head -104 Solstice.Skyfall.vcf > Solstice.Skyfall.100.vcf
-
-python3 Ensembl-GenesFromSNP.py -i Solstice.Skyfall.100.vcf
-
-# make unique list of gene ids
-cut -f 1 affectedGenes.tsv | sort -u > uniqueGeneIds.txt
-
-python2 knetminer_rank_genes.py uniqueGeneIds.txt
-```
-This should produce the following output files:
+Runnin the [demo.txt](demo.txt) takes about 6 minutes and should produce the following output files:
 + [Solstice.Skyfall.100.vcf](./Solstice.Skyfall.100.vcf)
 + [affectedGenes.tsv](./affectedGenes.tsv)
 + [scores.tab](./scores.tab)
