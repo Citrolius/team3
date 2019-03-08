@@ -1,0 +1,20 @@
+
+# get VCF file from cerealsDB
+cd data
+wget -c http://www.cerealsdb.uk.net/cerealgenomics/FINAL_35K_all_varieties_for_Guy.vcf .
+cd ..
+
+# extract SNPs among Solstice and Skyfall and take first hundred
+perl extract_SNPs.pl -v data/FINAL_35K_all_varieties_for_Guy.vcf \
+	-s Solstice.Skyfall.list -p > Solstice.Skyfall.vcf
+
+head -104 Solstice.Skyfall.vcf > Solstice.Skyfall.100.vcf
+
+python3 Ensembl-GenesFromSNP.py -i Solstice.Skyfall.100.vcf
+#this should create affectedGenes.tsv
+
+# make unique list of gene ids
+cut -f 1 affectedGenes.tsv | sort -u > uniqueGeneIds.txt
+
+python2 knetminer_rank_genes.py uniqueGeneIds.txt
+#this should create scores.tab
