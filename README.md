@@ -4,7 +4,7 @@ This document describes the work of team 3 :
 + Cyril Pommier, INRA
 + Giulia Arsuffi, Sainsbury Laboratory
 + Anna Backhaus, John Innes Centre
-+ Keywan Hassani-Pak, Rothamspted Research
++ Keywan Hassani-Pak, Rothamsted Research
 + Sally Elizabeth Gibbs
 + Bruno Contreras Moreira, EMBL-EBI
 
@@ -51,7 +51,7 @@ The first lines of the last one are shown below:
 
 | Ensembl Plants gene | gene name | KnetScore | KnetMiner URL |
 | ------------------- | --------- | --------- | ------------- |
-| [TRAESCS1A02G173400](http://plants.ensembl.org/Triticum_aestivum/Gene/Summary?g=TRAESCS1A02G173400) | MSBP1 | 64.41 | [TRAESCS1A02G173400&keyword=yield%2520OR%2520grain](http://knetminer.rothamsted.ac.uk/wheatknet/genepage?list=TRAESCS1A02G173400&keyword=yield%2520OR%2520grain) |
-| [TRAESCS4B02G293600](http://plants.ensembl.org/Triticum_aestivum/Gene/Summary?g=TRAESCS4B02G293600)	| PAA2 |	33.27	| [TRAESCS4B02G293600&keyword=yield%2520OR%2520grain](http://knetminer.rothamsted.ac.uk/wheatknet/genepage?list=TRAESCS4B02G293600&keyword=yield%2520OR%2520grain)|
-| [TRAESCS6A02G024400](http://plants.ensembl.org/Triticum_aestivum/Gene/Summary?g=TRAESCS6A02G024400)	| TRAESCS6A02G024400	| 30.92 | [TRAESCS6A02G024400&keyword=yield%2520OR%2520grain](http://knetminer.rothamsted.ac.uk/wheatknet/genepage?list=TRAESCS6A02G024400&keyword=yield%2520OR%2520grain) |
+| [TRAESCS1A02G173400](http://plants.ensembl.org/Triticum_aestivum/Gene/Summary?g=TRAESCS1A02G173400) | MSBP1 | 64.41 | [TRAESCS1A02G173400&keyword=yield+grain](http://knetminer.rothamsted.ac.uk/wheatknet/genepage?list=TRAESCS1A02G173400&keyword=yield+grain) |
+| [TRAESCS4B02G293600](http://plants.ensembl.org/Triticum_aestivum/Gene/Summary?g=TRAESCS4B02G293600)	| PAA2 |	33.27	| [TRAESCS4B02G293600&keyword=yield+grain](http://knetminer.rothamsted.ac.uk/wheatknet/genepage?list=TRAESCS4B02G293600&keyword=yield+grain)|
+| [TRAESCS6A02G024400](http://plants.ensembl.org/Triticum_aestivum/Gene/Summary?g=TRAESCS6A02G024400)	| TRAESCS6A02G024400	| 30.92 | [TRAESCS6A02G024400&keyword=yield+grain](http://knetminer.rothamsted.ac.uk/wheatknet/genepage?list=TRAESCS6A02G024400&keyword=yield+grain) |
 
